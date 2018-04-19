@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medline Service Test Task</title>
+</head>
+<body>
+<form id="filter_form">
+    <table class="table">
+        <tr>
+            <th>Filter</th>
+        </tr>
+        <tr>
+            <td>PN</td>
+            <td>
+                <input type="text" name="part_number"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Part Name</td>
+            <td>
+                <input type="text" name="part_name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Vendor</td>
+            <td>
+                <input type="text" name="vendor"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td>
+                <input type="number" name="quantity"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Shipped</td>
+            <td>
+                After <input type="text" class="date_picker" name="shipped_after"> Before <input class="date_picker"
+                                                                                                 type="text"
+                                                                                                 name="shipped_before">
+            </td>
+        </tr>
+        <tr>
+            <td>Received</td>
+            <td>
+                After <input type="text" name="received_after" class="date_picker"> Before <input type="text"
+                                                                                                  class="date_picker"
+                                                                                                  name="received_before">
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" name="filter_submit" value="true"/>
+    <div class="col-md-16 text-center">
+        <input id="filter_submit_button" class="btn btn-primary" type="submit" name="Filter" value="Filter"/>
+    </div>
+</form>
+<table id="parts" class="table">
+    <thead>
+    <tr>
+        <th columnname="part_number">PN</th>
+        <th columnname="part_name">Part name</th>
+        <th columnname="vendor">Vendor</th>
+        <th columnname="quantity">Quantity</th>
+        <th columnname="date_shipped">Shipped</th>
+        <th columnname="date_received">Received</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.js"
+        data-modules="effect effect-bounce effect-blind effect-bounce effect-clip effect-drop effect-fold effect-slide"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" href="styles.css">
+<script src="index.js"></script>
+</html>
