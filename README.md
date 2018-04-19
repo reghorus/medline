@@ -3,12 +3,12 @@
 3) Install postgresql server:
         sudo apt-get update
         sudo apt-get install postgresql postgresql-contrib
-        apply sql script
-3) Clone project from github : git clone https://github.com/reghorus/medline.git
-4) Enter to the project root directory and execute in command line "./mvnw clean package"
-5) Go to target directory of your project and copy newly created war file to webapps folder of tomcat
-6) Run tomcat by executing startup.sh file inside bin tomcat folder
-7) Open http://localhost:8080/medline-task-1.0-SNAPSHOT/ url in you browser
+4) apply database.sql sql script
+5) Clone project from github : git clone https://github.com/reghorus/medline.git
+6) Enter to the project root directory and execute in command line "./mvnw clean package"
+7) Go to target directory of your project and copy newly created war file to webapps folder of tomcat
+8) Run tomcat by executing startup.sh file inside bin tomcat folder
+9) Open http://localhost:8080/medline-task-1.0-SNAPSHOT/ url in you browser
 
 As an option to use tomcat maven plugin or jenkins.
 
